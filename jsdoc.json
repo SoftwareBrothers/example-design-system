@@ -23,7 +23,6 @@
   "templates": {
       "better-docs": {
             "name": "Example documentation",
-            "logo": "logo-top.png",
             "navigation": [
                 {
                     "label": "GitHub",
