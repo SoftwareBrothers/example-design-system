@@ -8,7 +8,8 @@
   },
   "plugins": [
       "better-docs/component",
-      "better-docs/category"
+      "better-docs/category",
+      "plugins/markdown"
   ],
   "opts": {
       "encoding": "utf8",
@@ -16,11 +17,20 @@
       "recurse": true,
       "verbose": true,
       "readme": "./readme.md",
-      "template": "node_modules/better-docs"
+      "template": "node_modules/better-docs",
+      "tutorials": "./tutorials"
   },
   "templates": {
       "better-docs": {
-          "name": "Vue app"
-      }
+          "name": "Example documentation",
+          "logo": "logo-top.png"
+      },
+      "default": {
+        "staticFiles": {
+          "include": [
+              "./docs-src"
+          ]
+        }
+    }
   }
 }

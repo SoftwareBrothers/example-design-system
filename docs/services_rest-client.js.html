@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: services/rest-client.js</title>
 
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -53,8 +55,8 @@
             <div class="column is-9-desktop">
                 <div class="content" id="main-content-wrapper">
                     <header class="page-title">
-                        <p>Title</p>
-                        <h1>Home</h1>
+                        <p>Source</p>
+                        <h1>services/rest-client.js</h1>
                     </header>
                     
                     
@@ -62,60 +64,58 @@
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>my-documented-app</h1>
-<h2>What it is</h2>
-<p>This is example documentation for a Vuejs app.</p>
-<p>It was created by using:</p>
-<ul>
-<li><a href="https://devdocs.io/jsdoc/">JSDoc</a></li>
-<li><a href="https://github.com/SoftwareBrothers/better-docs">better-docs</a></li>
-</ul>
-<p>The goal of it is to show you, dear programmer, what is possible when you work with jsdoc.</p>
-<p>You can simply apply the same rules to the React application.</p>
-<p>The code for this example can be found here: <a href="https://github.com/SoftwareBrothers/example-design-system">SoftwareBrothers/example-design-system</a></p>
-<h2>What it contains</h2>
-<h3>Components</h3>
-<p>There are 2 components documented:</p>
-<ul>
-<li><a href="ProgressBar.html">ProgressBar</a></li>
-<li><a href="Box.html">Box</a></li>
-</ul>
-<p>On their pages you can see:</p>
-<ul>
-<li>programming interface with props, methods, events and slots</li>
-<li>preview with the option to modify example codes in the browser.</li>
-</ul>
-<h3>Tutorials</h3>
-<p>There are a couple of tutorials on the sidebar. Both <a href="tutorial-colors.html">Colors</a> and <a href="tutorial-brand.html">Brand identity</a> are filed with some example content. Rest is empty.</p>
-<h3>Client library</h3>
-<p>Also, there is an example client library: <a href="RESTClient.html">RESTClient</a> documented.</p>
-<p>You can verify there how to:</p>
-<ul>
-<li>document methods with properties and return values</li>
-<li>document custom types</li>
-</ul></article>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * This is an example REST Client. It could use axios to connect
+ * with the backend API.
+ * 
+ * @category API
+ * @see https://github.com/axios/axios
+ * @example &lt;caption>Using the client library&lt;/caption>
+ * const client = new RESTClient({ token: 'myToken' })
+ * const records = await client.getSomeRecords(resourceId)
+ * 
+ * @example &lt;caption>Hitting a different API version&lt;/caption>
+ * const client = new RESTClient({ token: 'myToken', apiVersion: 1 })
+ */
+class RESTClient {
+  /**
+   * @param   {Object}  options
+   * @param   {Number}  [options.apiVersion=2]  version of the API
+   * @param   {String}  options.token           authentication token
+   */
+  constructor({ apiVersion = 2, token }) {
+    // constructor body
+  }
+
+  /**
+   * You can even define your own types in JSDoc
+   * 
+   * @typedef {Object} RESTClient~Record
+   * @property {String} first      Some example property
+   * @property {String} another    Another property
+   */
+
+  /**
+   * This could be a function returning data from the
+   * REST API. It returns a newly created type: {@link RESTClient~Record}
+   *
+   * @param   {String}  mainKey  Example property which serves
+   *                             as a key in the records lookup
+   *                             process
+   *
+   * @return  {Promise&lt;Array&lt;RESTClient~Record>>}
+   */
+  async getSomeRecords(mainKey) {
+    // method body
+  }
+}
+
+export default RESTClient
+</code></pre>
+        </article>
     </section>
-
-
 
 
 

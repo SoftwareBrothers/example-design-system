@@ -11,17 +11,30 @@
 
 <script>
 /**
+ * Shows progress in a given Project.
+ * By giving *spent* and *remaining* time (in hours) it computes the
+ * progress and shows it in the UI.
+ *
  * @component
- * @example
- * <ProgressBar :spent="100" :remaining="50"></ProgressBar>
+ * @example <caption>Basic</caption>
+ * <ProgressBar :spent="100" :remaining="50" />
+ * 
+ * @example <caption>Almost done</caption>
+ * <ProgressBar :spent="100" :remaining="5" />
  */
 export default {
   name: 'ProgressBar',
   props: {
+    /**
+     * How many hours have already been spent
+     */
     spent: {
       type: Number,
       default: 30,
     },
+    /**
+     * What is the remaining number of hours
+     */
     remaining: {
       type: Number,
       default: 40,

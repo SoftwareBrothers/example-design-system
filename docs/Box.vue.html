@@ -5,7 +5,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>JSDoc: ProgressBar.vue</title>
+    <title>JSDoc: Box.vue</title>
 
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -54,7 +54,7 @@
                 <div class="content" id="main-content-wrapper">
                     <header class="page-title">
                         <p>Source</p>
-                        <h1>ProgressBar.vue</h1>
+                        <h1>Box.vue</h1>
                     </header>
                     
                     
@@ -65,79 +65,96 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>&lt;template>
-  &lt;div class="progress-wrapper">
-    &lt;div class="from-start" :style="{ width: progress + '%' }">
-      Time spent: &lt;b>{{spent}}&lt;/b>
-      &lt;div class="remaining" :class="{ reverse: isSmall }">
-        Remaining estimate: &lt;b>{{remaining}}&lt;/b>
+  &lt;section class="wrapper">
+    &lt;header>
+      {{title}}
+      &lt;div class="opts">
+        &lt;!-- @slot Options Here should go all the top header options -->
+        &lt;slot name="options">&lt;/slot>
       &lt;/div>
+    &lt;/header>
+    &lt;div class='inner-content'>
+      &lt;!-- @slot Main, central, content of the component -->
+      &lt;slot />
     &lt;/div>
-  &lt;/div>
+  &lt;/section>
 &lt;/template>
 
 &lt;script>
 /**
- * Shows a progress in given Project.
- * By giving *spent* and *remaining* time (in hours) it computes the
- * progress and shows it in the UI.
+ * This component is just a Box with border.
+ * It serves as an example for how you can incorporate
+ * components together.
  *
  * @component
- * @example &lt;caption>Basic&lt;/caption>
- * &lt;ProgressBar :spent="100" :remaining="50" />
+ * @example &lt;caption>Basic usage just with the default slot&lt;/caption>
+ * &lt;Box>
+ *   I am inside a slot
+ * &lt;/Box>
  * 
- * @example &lt;caption>Almost done version&lt;/caption>
- * &lt;ProgressBar :spent="100" :remaining="5" />
+ * @example &lt;caption>Using seccond component inside&lt;/caption>
+ * &lt;Box>
+ *   &lt;ProgressBar :spent="spent" :remaining="50">&lt;/ProgressBar>
+ * &lt;/Box>
+ * 
+* @example &lt;caption>Example of passing entire component in a preview&lt;/caption>
+ * {
+ *   template: `&lt;Box>
+ *     &lt;ProgressBar :spent="spent" :remaining="50">&lt;/ProgressBar>
+ *     &lt;ProgressBar :spent="50" :remaining="50" style="margin-top: 20px">&lt;/ProgressBar>
+ *   &lt;/Box>`,
+ *   data: function() {
+ *     return {spent: 223};
+ *   }
+ * }
  */
 export default {
-  name: 'ProgressBar',
+  name: "Box",
   props: {
-    spent: {
-      type: Number,
-      default: 30,
-    },
-    remaining: {
-      type: Number,
-      default: 40,
+    title: {
+      type: String,
+      default: "My box"
     }
   },
-  computed: {
-    progress: function() {
-      return +this.spent / (+this.remaining + +this.spent) * 100
-    },
-    isSmall: function() {
-      return this.progress &lt; 60;
+  methods: {
+    /**
+     * Also you can describe methods for each component
+     * the same as you would do this in regular @jsdoc
+     * documented file
+     * 
+     * @param {string} prop1      some example property
+     * @param {string} prop2      other property
+     */
+    exampleMethod(prop1, prop2) {
+      // method body
+
+      // method could even throw an event
+      /**
+       * This event could be thrown by component in case
+       * of some kind of unexpected behaviour.
+       * 
+       * @category API
+       * @event unexpectedEvent
+       */
+      this.$emit('unexpecteEvent')
     }
   }
 }
 &lt;/script>
 
 &lt;style scoped>
-  .progress-wrapper {
-    height: 32px;
-    background: rgba(0,87,106,0.1);
-    color: #00576A;
-    border-radius: 50px;
+  section.wrapper {
+    background: #fff;
+    border: 1px solid #DADADA;
+    border-radius: 4px;
+    padding: 32px;
   }
-  .progress-wrapper div {
-    padding: 6px 16px;
-    height: 20px;
-  }
-  .from-start {
-    float: left;
-    background: #00576A;
-    color: #fff;
-    position: relative;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  .remaining {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .remaining.reverse {
-    right: -200px;
-    color: #00576A;
+
+  section.wrapper > header {
+    font-size: 18px;
+    color: #211D1A;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 &lt;/style></code></pre>
         </article>

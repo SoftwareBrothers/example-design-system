@@ -25,9 +25,11 @@
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
+                     
+                        <img src="logo-top.png" alt="logo">
                     
                      
-                        <h1 class="navbar-item">Vue app</h1>
+                        <h1 class="navbar-item">Example documentation</h1>
                     
                     <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                         <span aria-hidden="true"></span>
@@ -44,7 +46,7 @@
             <div class="column is-3" id="sidebarNav">
                 <div class="sidebar">
                     <nav>
-                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Components</h3><ul><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div>
+                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-brand.html">Brand identity</a></li><li><a href="tutorial-colors.html">Colors</a></li><li><a href="tutorial-icons.html">Icons</a></li><li><a href="tutorial-layout-and-grid.html">Layout and Grid</a></li><li><a href="tutorial-typography.html">Typography</a></li></ul><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
                     </nav>
                 </div>
             </div>
@@ -93,6 +95,12 @@
 
     
     
+    <div class="description">
+        <p>Shows progress in a given Project.
+By giving <em>spent</em> and <em>remaining</em> time (in hours) it computes the
+progress and shows it in the UI.</p>
+    </div>
+    
 
 
 
@@ -123,7 +131,7 @@
             number
           </td>
           <td>No</td>
-          <td></td>
+          <td>How many hours have already been spent</td>
           <td>30</td>
         </tr>
         
@@ -134,7 +142,7 @@
             number
           </td>
           <td>No</td>
-          <td></td>
+          <td>What is the remaining number of hours</td>
           <td>40</td>
         </tr>
         
@@ -182,9 +190,9 @@
 
     
         <p class="tag-source">
-            <a href="ProgressBar.vue.html" class="button">View Source</a>
+            <a href="components_ProgressBar.vue.html" class="button">View Source</a>
             <span>
-                <a href="ProgressBar.vue.html">ProgressBar.vue</a>, <a href="ProgressBar.vue.html#line7">line 7</a>
+                <a href="components_ProgressBar.vue.html">components/ProgressBar.vue</a>, <a href="components_ProgressBar.vue.html#line14">line 14</a>
             </span>
         </p>
     
@@ -210,41 +218,87 @@
 
 
 
-    <h5>Example</h5>
+    <h5>Examples</h5>
+    
+        <p class="code-caption">Basic</p>
     
     
         
 <div style="margin-bottom: 30px;">
-  <div id='Ans4z04f8wqk0jxakuq'></div>
-  <template id="TAns4z04f8wqk0jxakuq">
+  <div id='A41iva84kqb7k0ktpr42'></div>
+  <template id="TA41iva84kqb7k0ktpr42">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AAns4z04f8wqk0jxakuq"></div>
+      <div id="AA41iva84kqb7k0ktpr42"></div>
       <script>
         new Vue({
           components: Components,
           render: (d, context) => {
             return d(Wrapper, {
-              props: {defaultCode: "<ProgressBar :spent=\"100\" :remaining=\"50\"></ProgressBar>"}
+              props: {defaultCode: "<ProgressBar :spent=\"100\" :remaining=\"50\" />"}
             })
           },
-        }).$mount('#AAns4z04f8wqk0jxakuq');
+        }).$mount('#AA41iva84kqb7k0ktpr42');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FAns4z04f8wqk0jxakuq" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FA41iva84kqb7k0ktpr42" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FAns4z04f8wqk0jxakuq');
+      const iframe = document.getElementById('FA41iva84kqb7k0ktpr42');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TAns4z04f8wqk0jxakuq").html());
+      doc.document.write($("#TA41iva84kqb7k0ktpr42").html());
+      doc.document.close();
+      iframe.contentWindow.updateHeight = function(height) {
+        $(iframe).height(height + 20)
+      }
+    }()
+  </script>
+</div>
+    
+
+        <p class="code-caption">Almost done</p>
+    
+    
+        
+<div style="margin-bottom: 30px;">
+  <div id='Am81j60uu1lk0ktpr42'></div>
+  <template id="TAm81j60uu1lk0ktpr42">
+    <head>
+        <script src="./build/entry.js"></script>
+        <link rel="stylesheet" href="./build/entry.css">
+    </head>
+    <body>
+      <div id="AAm81j60uu1lk0ktpr42"></div>
+      <script>
+        new Vue({
+          components: Components,
+          render: (d, context) => {
+            return d(Wrapper, {
+              props: {defaultCode: "<ProgressBar :spent=\"100\" :remaining=\"5\" />"}
+            })
+          },
+        }).$mount('#AAm81j60uu1lk0ktpr42');
+      </script>
+    </body>
+  </template>
+
+  <iframe frameborder="0" id="FAm81j60uu1lk0ktpr42" style="width: 100%;"></iframe>
+
+  <script>
+    void function() {
+      const iframe = document.getElementById('FAm81j60uu1lk0ktpr42');
+      const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
+
+      doc.document.open();
+      doc.document.write($("#TAm81j60uu1lk0ktpr42").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -297,7 +351,7 @@
 
 <footer class="footer">
     <div class="content has-text-centered">
-        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sat Sep 14 2019 21:07:40 GMT+0200 (Central European Summer Time)</p>
+        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Sun Sep 15 2019 12:15:15 GMT+0200 (Central European Summer Time)</p>
         <p class="sidebar-created-by">
             <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
             <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>

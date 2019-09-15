@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: components/ProgressBar.vue</title>
 
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -53,8 +55,8 @@
             <div class="column is-9-desktop">
                 <div class="content" id="main-content-wrapper">
                     <header class="page-title">
-                        <p>Title</p>
-                        <h1>Home</h1>
+                        <p>Source</p>
+                        <h1>components/ProgressBar.vue</h1>
                     </header>
                     
                     
@@ -62,60 +64,92 @@
 
 
     
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
     <section>
-        <article><h1>my-documented-app</h1>
-<h2>What it is</h2>
-<p>This is example documentation for a Vuejs app.</p>
-<p>It was created by using:</p>
-<ul>
-<li><a href="https://devdocs.io/jsdoc/">JSDoc</a></li>
-<li><a href="https://github.com/SoftwareBrothers/better-docs">better-docs</a></li>
-</ul>
-<p>The goal of it is to show you, dear programmer, what is possible when you work with jsdoc.</p>
-<p>You can simply apply the same rules to the React application.</p>
-<p>The code for this example can be found here: <a href="https://github.com/SoftwareBrothers/example-design-system">SoftwareBrothers/example-design-system</a></p>
-<h2>What it contains</h2>
-<h3>Components</h3>
-<p>There are 2 components documented:</p>
-<ul>
-<li><a href="ProgressBar.html">ProgressBar</a></li>
-<li><a href="Box.html">Box</a></li>
-</ul>
-<p>On their pages you can see:</p>
-<ul>
-<li>programming interface with props, methods, events and slots</li>
-<li>preview with the option to modify example codes in the browser.</li>
-</ul>
-<h3>Tutorials</h3>
-<p>There are a couple of tutorials on the sidebar. Both <a href="tutorial-colors.html">Colors</a> and <a href="tutorial-brand.html">Brand identity</a> are filed with some example content. Rest is empty.</p>
-<h3>Client library</h3>
-<p>Also, there is an example client library: <a href="RESTClient.html">RESTClient</a> documented.</p>
-<p>You can verify there how to:</p>
-<ul>
-<li>document methods with properties and return values</li>
-<li>document custom types</li>
-</ul></article>
+        <article>
+            <pre class="prettyprint source linenums"><code>&lt;template>
+  &lt;div class="progress-wrapper">
+    &lt;div class="from-start" :style="{ width: progress + '%' }">
+      Time spent: &lt;b>{{spent}}&lt;/b>
+      &lt;div class="remaining" :class="{ reverse: isSmall }">
+        Remaining estimate: &lt;b>{{remaining}}&lt;/b>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/template>
+
+&lt;script>
+/**
+ * Shows progress in a given Project.
+ * By giving *spent* and *remaining* time (in hours) it computes the
+ * progress and shows it in the UI.
+ *
+ * @component
+ * @example &lt;caption>Basic&lt;/caption>
+ * &lt;ProgressBar :spent="100" :remaining="50" />
+ * 
+ * @example &lt;caption>Almost done&lt;/caption>
+ * &lt;ProgressBar :spent="100" :remaining="5" />
+ */
+export default {
+  name: 'ProgressBar',
+  props: {
+    /**
+     * How many hours have already been spent
+     */
+    spent: {
+      type: Number,
+      default: 30,
+    },
+    /**
+     * What is the remaining number of hours
+     */
+    remaining: {
+      type: Number,
+      default: 40,
+    }
+  },
+  computed: {
+    progress: function() {
+      return +this.spent / (+this.remaining + +this.spent) * 100
+    },
+    isSmall: function() {
+      return this.progress &lt; 60;
+    }
+  }
+}
+&lt;/script>
+
+&lt;style scoped>
+  .progress-wrapper {
+    height: 32px;
+    background: rgba(0,87,106,0.1);
+    color: #00576A;
+    border-radius: 50px;
+  }
+  .progress-wrapper div {
+    padding: 6px 16px;
+    height: 20px;
+  }
+  .from-start {
+    float: left;
+    background: #00576A;
+    color: #fff;
+    position: relative;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .remaining {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .remaining.reverse {
+    right: -200px;
+    color: #00576A;
+  }
+&lt;/style></code></pre>
+        </article>
     </section>
-
-
 
 
 

@@ -16,5 +16,8 @@
 
     import './styles/iframe.css';
 
-  import ProgressBar from '../src/components/ProgressBar.vue';
+  import Box from '../src/components/Box.vue';
+Components['Box'] = Box;
+
+import ProgressBar from '../src/components/ProgressBar.vue';
 Components['ProgressBar'] = ProgressBar;
