@@ -5,7 +5,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>JSDoc: services/rest-client.js</title>
+    <title>JSDoc: components/dashName.vue</title>
 
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -64,7 +64,7 @@
                 <div class="content" id="main-content-wrapper">
                     <header class="page-title">
                         <p>Source</p>
-                        <h1>services/rest-client.js</h1>
+                        <h1>components/dashName.vue</h1>
                     </header>
                     
                     
@@ -74,54 +74,35 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * This is an example REST Client. It could use axios to connect
- * with the backend API.
+            <pre class="prettyprint source linenums"><code>&lt;template>
+  &lt;div>
+    Hello from dash with a prop &lt;b>{{exampleProp}}&lt;/b>
+  &lt;/div>
+&lt;/template>
+
+&lt;script>
+/**
+ * @classdesc
+ * This example symbolize the usage of vue components with a dash'ed name
  * 
- * @category API
- * @see https://github.com/axios/axios
- * @example &lt;caption>Using the client library&lt;/caption>
- * const client = new RESTClient({ token: 'myToken' })
- * const records = await client.getSomeRecords(resourceId)
+ * You also can add a description in the top level
+ * (so called class level) part of the page. You can do this with
+ * `@classdesc` tag
  * 
- * @example &lt;caption>Hitting a different API version&lt;/caption>
- * const client = new RESTClient({ token: 'myToken', apiVersion: 1 })
+ * Furthermore you can hide `Constructor` part with `@hideconstructor`
+ * @hideconstructor
+ * @component
  */
-class RESTClient {
-  /**
-   * @param   {Object}  options
-   * @param   {Number}  [options.apiVersion=2]  version of the API
-   * @param   {String}  options.token           authentication token
-   */
-  constructor({ apiVersion = 2, token }) {
-    // constructor body
-  }
-
-  /**
-   * You can even define your own types in JSDoc
-   * 
-   * @typedef {Object} RESTClient~Record
-   * @property {String} first      Some example property
-   * @property {String} another    Another property
-   */
-
-  /**
-   * This could be a function returning data from the
-   * REST API. It returns a newly created type: {@link RESTClient~Record}
-   *
-   * @param   {String}  mainKey  Example property which serves
-   *                             as a key in the records lookup
-   *                             process
-   *
-   * @return  {Promise&lt;Array&lt;RESTClient~Record>>}
-   */
-  async getSomeRecords(mainKey) {
-    // method body
+export default {
+  name: 'dash-name',
+  props: {
+    exampleProp: {
+      type: String,
+      default: 'I am prop',
+    }
   }
 }
-
-export default RESTClient
-</code></pre>
+&lt;/script></code></pre>
         </article>
     </section>
 

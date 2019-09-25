@@ -1,5 +1,7 @@
 
-    window.Components = {};
+    window.reactComponents = {};
+
+    window.vueComponents = {};
 
   
       import Vue from 'vue/dist/vue.js';
@@ -30,11 +32,14 @@
 
     import './styles/iframe.css';
 
-  import Box from '../src/components/Box.vue';
-Components['Box'] = Box;
+  import Component0 from '../src/components/Box.vue';
+vueComponents['Box'] = Component0;
 
-import Documented from '../src/components/ReactComponent.jsx';
-Components['Documented'] = Documented;
+import Component1 from '../src/components/dashName.vue';
+vueComponents['dash-name'] = Component1;
 
-import ProgressBar from '../src/components/ProgressBar.vue';
-Components['ProgressBar'] = ProgressBar;
+import Component2 from '../src/components/ReactComponent.jsx';
+reactComponents['Documented'] = Component2;
+
+import Component3 from '../src/components/ProgressBar.vue';
+vueComponents['ProgressBar'] = Component3;
