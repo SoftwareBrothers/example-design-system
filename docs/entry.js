@@ -9,7 +9,7 @@
       window.Vue = Vue;
 
 
-      import VueWrapper from '../node_modules/better-docs/lib/vue-wrapper.js';
+      import VueWrapper from '../better-docs/lib/vue-wrapper.js';
 
       window.VueWrapper = VueWrapper;
 
@@ -19,7 +19,7 @@
       import ReactDOM from "react-dom";
 
 
-      import ReactWrapper from '../node_modules/better-docs/lib/react-wrapper.js';
+      import ReactWrapper from '../better-docs/lib/react-wrapper.js';
 
       window.React = React;
 

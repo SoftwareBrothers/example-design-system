@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="utf-8">
-    <title>JSDoc: ProgressBar</title>
 
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="./build/entry.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Muli:100,400,700|Oswald:300|Inconsolata,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/app.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> ProgressBar</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
 </head>
 
-<body>
+<body class="layout small-header">
     <div id="stickyNavbarOverlay"></div>
-    <div class="top-navbar">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    
-                     
-                        <h1 class="navbar-item">Example documentation</h1>
-                    
-                    <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Example documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
                     </a>
-                </div>
-                 
-                <div class="navbar-menu">
-                    <div class="navbar-end">
-                    
-                        <div class="navbar-item">
-                            <a href="https://github.com/SoftwareBrothers/example-design-system" target="_blank">GitHub</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            
+                                <a class="dropdown-item" href="tutorial-brand.html">
+                                    Brand identity
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-colors.html">
+                                    Colors
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-icons.html">
+                                    Icons
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-layout-and-grid.html">
+                                    Layout and Grid
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-typography.html">
+                                    Typography
+                                </a>
+                            
+                        
                         </div>
-                    
                     </div>
                 </div>
                 
-            </nav>
+                
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="columns">
-            <div class="column is-3" id="sidebarNav">
-                <div class="sidebar">
-                    <nav>
-                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-brand.html">Brand identity</a></li><li><a href="tutorial-colors.html">Colors</a></li><li><a href="tutorial-icons.html">Icons</a></li><li><a href="tutorial-layout-and-grid.html">Layout and Grid</a></li><li><a href="tutorial-typography.html">Typography</a></li></ul><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="dash-name.html">dash-name</a></li><li><a href="Documented.html">Documented</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
-                    </nav>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
                 </div>
-            </div>
-            <div class="column is-9-desktop">
-                <div class="content" id="main-content-wrapper">
-                    <header class="page-title">
-                        <p>Components</p>
-                        <h1>ProgressBar</h1>
-                    </header>
-                    
-                    
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="dash-name.html">dash-name</a></li><li><a href="Documented.html">Documented</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Components</p>
+                    <h1>ProgressBar</h1>
+                </header>
+                
 
 
 
@@ -86,13 +134,17 @@
     
         
             <div class='vertical-section'>
-                <h3 class="title"><span>Constructor</span></h3>
                 <div class="members">
                     <div class="member">
+                        <div class=name>
+                            <span class="tag">Constructor</span>
+                        </div>
+                        
 
 
     
     <h4 class="name" id="ProgressBar">
+        <a class="href-link" href="#ProgressBar">#</a>
         
         <span class="code-name">
             
@@ -120,44 +172,45 @@ progress and shows it in the UI.</p>
     
         <h5>PropTypes:</h5>
         
+<div class="table-container">
+  <table class="params table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th class="last">Default</th>
+    </tr>
+    </thead>
 
-<table class="params">
-  <thead>
-  <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Required</th>
-      <th>Description</th>
-      <th class="last">Default</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  
-        <tr class="deep-level-0">
-          <td class="name"><code>spent</code></td>
-          <td>
-            number
-          </td>
-          <td>No</td>
-          <td>How many hours have already been spent</td>
-          <td>30</td>
-        </tr>
-        
-  
-        <tr class="deep-level-0">
-          <td class="name"><code>remaining</code></td>
-          <td>
-            number
-          </td>
-          <td>No</td>
-          <td>What is the remaining number of hours</td>
-          <td>40</td>
-        </tr>
-        
-  
-  </tbody>
-</table>
+    <tbody>
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>spent</code></td>
+            <td>
+              number
+            </td>
+            <td>No</td>
+            <td>How many hours have already been spent</td>
+            <td>30</td>
+          </tr>
+          
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>remaining</code></td>
+            <td>
+              number
+            </td>
+            <td>No</td>
+            <td>What is the remaining number of hours</td>
+            <td>40</td>
+          </tr>
+          
+    
+    </tbody>
+  </table>
+</div>
     
 
 
@@ -234,14 +287,14 @@ progress and shows it in the UI.</p>
     
         
 <div style="margin-bottom: 30px;">
-  <div id='A9o50y1sxcztk0z9h836'></div>
-  <template id="TA9o50y1sxcztk0z9h836">
+  <div id='A3p6ljucwahxk9ki2sui'></div>
+  <template id="TA3p6ljucwahxk9ki2sui">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AA9o50y1sxcztk0z9h836"></div>
+      <div id="AA3p6ljucwahxk9ki2sui"></div>
       <script>
         new Vue({
           components: vueComponents,
@@ -250,20 +303,20 @@ progress and shows it in the UI.</p>
               props: {defaultCode: "<ProgressBar :spent=\"100\" :remaining=\"50\" />"}
             })
           },
-        }).$mount('#AA9o50y1sxcztk0z9h836');
+        }).$mount('#AA3p6ljucwahxk9ki2sui');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FA9o50y1sxcztk0z9h836" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FA3p6ljucwahxk9ki2sui" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FA9o50y1sxcztk0z9h836');
+      const iframe = document.getElementById('FA3p6ljucwahxk9ki2sui');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TA9o50y1sxcztk0z9h836").html());
+      doc.document.write($("#TA3p6ljucwahxk9ki2sui").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -278,14 +331,14 @@ progress and shows it in the UI.</p>
     
         
 <div style="margin-bottom: 30px;">
-  <div id='Aqig75u0e1yk0z9h836'></div>
-  <template id="TAqig75u0e1yk0z9h836">
+  <div id='Awvecye0rz2k9ki2sui'></div>
+  <template id="TAwvecye0rz2k9ki2sui">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AAqig75u0e1yk0z9h836"></div>
+      <div id="AAwvecye0rz2k9ki2sui"></div>
       <script>
         new Vue({
           components: vueComponents,
@@ -294,20 +347,20 @@ progress and shows it in the UI.</p>
               props: {defaultCode: "<ProgressBar :spent=\"100\" :remaining=\"5\" />"}
             })
           },
-        }).$mount('#AAqig75u0e1yk0z9h836');
+        }).$mount('#AAwvecye0rz2k9ki2sui');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FAqig75u0e1yk0z9h836" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FAwvecye0rz2k9ki2sui" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FAqig75u0e1yk0z9h836');
+      const iframe = document.getElementById('FAwvecye0rz2k9ki2sui');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TAqig75u0e1yk0z9h836").html());
+      doc.document.write($("#TAwvecye0rz2k9ki2sui").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -318,7 +371,8 @@ progress and shows it in the UI.</p>
     
 
 
-</div>
+
+                    </div>
                 </div>
             </div>
         
@@ -353,22 +407,27 @@ progress and shows it in the UI.</p>
 
 
 
-                </div>
             </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
         </div>
     </div>
-
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Wed Sep 25 2019 14:45:18 GMT+0200 (Central European Summer Time)</p>
-        <p class="sidebar-created-by">
-            <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
-            <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
-        </p>
-    </div>
-</footer>
-
 <script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
 <script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
 </body>
 </html>

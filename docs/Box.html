@@ -1,71 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="utf-8">
-    <title>JSDoc: Box</title>
 
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="./build/entry.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Muli:100,400,700|Oswald:300|Inconsolata,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/app.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Box</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
 </head>
 
-<body>
+<body class="layout small-header">
     <div id="stickyNavbarOverlay"></div>
-    <div class="top-navbar">
-        <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    
-                     
-                        <h1 class="navbar-item">Example documentation</h1>
-                    
-                    <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">Example documentation</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        Tutorials
+                        <i class="fas fa-chevron-down fa-xs"></i>
                     </a>
-                </div>
-                 
-                <div class="navbar-menu">
-                    <div class="navbar-end">
-                    
-                        <div class="navbar-item">
-                            <a href="https://github.com/SoftwareBrothers/example-design-system" target="_blank">GitHub</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            
+                                <a class="dropdown-item" href="tutorial-brand.html">
+                                    Brand identity
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-colors.html">
+                                    Colors
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-icons.html">
+                                    Icons
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-layout-and-grid.html">
+                                    Layout and Grid
+                                </a>
+                            
+                                <a class="dropdown-item" href="tutorial-typography.html">
+                                    Typography
+                                </a>
+                            
+                        
                         </div>
-                    
                     </div>
                 </div>
                 
-            </nav>
+                
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="columns">
-            <div class="column is-3" id="sidebarNav">
-                <div class="sidebar">
-                    <nav>
-                        <h2><a href="index.html">Home</a></h2><div class="category"><h3>Tutorials</h3><ul><li><a href="tutorial-brand.html">Brand identity</a></li><li><a href="tutorial-colors.html">Colors</a></li><li><a href="tutorial-icons.html">Icons</a></li><li><a href="tutorial-layout-and-grid.html">Layout and Grid</a></li><li><a href="tutorial-typography.html">Typography</a></li></ul><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="dash-name.html">dash-name</a></li><li><a href="Documented.html">Documented</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
-                    </nav>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
                 </div>
-            </div>
-            <div class="column is-9-desktop">
-                <div class="content" id="main-content-wrapper">
-                    <header class="page-title">
-                        <p>Components</p>
-                        <h1>Box</h1>
-                    </header>
-                    
-                    
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Components</h3><ul><li><a href="Box.html">Box</a></li><li><a href="dash-name.html">dash-name</a></li><li><a href="Documented.html">Documented</a></li><li><a href="ProgressBar.html">ProgressBar</a></li></ul></div><div class="category"><h2>API</h2><h3>Classes</h3><ul><li><a href="RESTClient.html">RESTClient</a></li></ul><h3>Events</h3><ul><li><a href="Box.html#event:unexpectedEvent">unexpectedEvent</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Components</p>
+                    <h1>Box</h1>
+                </header>
+                
 
 
 
@@ -86,13 +134,17 @@
     
         
             <div class='vertical-section'>
-                <h3 class="title"><span>Constructor</span></h3>
                 <div class="members">
                     <div class="member">
+                        <div class=name>
+                            <span class="tag">Constructor</span>
+                        </div>
+                        
 
 
     
     <h4 class="name" id="Box">
+        <a class="href-link" href="#Box">#</a>
         
         <span class="code-name">
             
@@ -121,33 +173,34 @@ components together.</p>
     
         <h5>PropTypes:</h5>
         
+<div class="table-container">
+  <table class="params table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th class="last">Default</th>
+    </tr>
+    </thead>
 
-<table class="params">
-  <thead>
-  <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Required</th>
-      <th>Description</th>
-      <th class="last">Default</th>
-  </tr>
-  </thead>
-
-  <tbody>
-  
-        <tr class="deep-level-0">
-          <td class="name"><code>title</code></td>
-          <td>
-            string
-          </td>
-          <td>No</td>
-          <td>This will be in the header</td>
-          <td>"My box"</td>
-        </tr>
-        
-  
-  </tbody>
-</table>
+    <tbody>
+    
+          <tr class="deep-level-0">
+            <td class="name"><code>title</code></td>
+            <td>
+              string
+            </td>
+            <td>No</td>
+            <td>This will be in the header</td>
+            <td>"My box"</td>
+          </tr>
+          
+    
+    </tbody>
+  </table>
+</div>
     
 
 
@@ -224,14 +277,14 @@ components together.</p>
     
         
 <div style="margin-bottom: 30px;">
-  <div id='A6j9bqoyca9mk0z9h81t'></div>
-  <template id="TA6j9bqoyca9mk0z9h81t">
+  <div id='Axe77llayt3k9ki2su6'></div>
+  <template id="TAxe77llayt3k9ki2su6">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AA6j9bqoyca9mk0z9h81t"></div>
+      <div id="AAxe77llayt3k9ki2su6"></div>
       <script>
         new Vue({
           components: vueComponents,
@@ -240,20 +293,20 @@ components together.</p>
               props: {defaultCode: "<Box>\n  I am inside a slot\n</Box>"}
             })
           },
-        }).$mount('#AA6j9bqoyca9mk0z9h81t');
+        }).$mount('#AAxe77llayt3k9ki2su6');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FA6j9bqoyca9mk0z9h81t" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FAxe77llayt3k9ki2su6" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FA6j9bqoyca9mk0z9h81t');
+      const iframe = document.getElementById('FAxe77llayt3k9ki2su6');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TA6j9bqoyca9mk0z9h81t").html());
+      doc.document.write($("#TAxe77llayt3k9ki2su6").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -268,14 +321,14 @@ components together.</p>
     
         
 <div style="margin-bottom: 30px;">
-  <div id='Ael0rylb5fn8k0z9h81t'></div>
-  <template id="TAel0rylb5fn8k0z9h81t">
+  <div id='Auiigyoanf4jk9ki2su6'></div>
+  <template id="TAuiigyoanf4jk9ki2su6">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AAel0rylb5fn8k0z9h81t"></div>
+      <div id="AAuiigyoanf4jk9ki2su6"></div>
       <script>
         new Vue({
           components: vueComponents,
@@ -284,20 +337,20 @@ components together.</p>
               props: {defaultCode: "<Box>\n  <ProgressBar :spent=\"spent\" :remaining=\"50\"></ProgressBar>\n</Box>"}
             })
           },
-        }).$mount('#AAel0rylb5fn8k0z9h81t');
+        }).$mount('#AAuiigyoanf4jk9ki2su6');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FAel0rylb5fn8k0z9h81t" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FAuiigyoanf4jk9ki2su6" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FAel0rylb5fn8k0z9h81t');
+      const iframe = document.getElementById('FAuiigyoanf4jk9ki2su6');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TAel0rylb5fn8k0z9h81t").html());
+      doc.document.write($("#TAuiigyoanf4jk9ki2su6").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -312,14 +365,14 @@ components together.</p>
     
         
 <div style="margin-bottom: 30px;">
-  <div id='A21ylrxfdxd5k0z9h81t'></div>
-  <template id="TA21ylrxfdxd5k0z9h81t">
+  <div id='Agp2fxjes6fek9ki2su6'></div>
+  <template id="TAgp2fxjes6fek9ki2su6">
     <head>
         <script src="./build/entry.js"></script>
         <link rel="stylesheet" href="./build/entry.css">
     </head>
     <body>
-      <div id="AA21ylrxfdxd5k0z9h81t"></div>
+      <div id="AAgp2fxjes6fek9ki2su6"></div>
       <script>
         new Vue({
           components: vueComponents,
@@ -328,20 +381,20 @@ components together.</p>
               props: {defaultCode: "{\n  template: `<Box>\n    <ProgressBar :spent=\"spent\" :remaining=\"50\"></ProgressBar>\n    <ProgressBar :spent=\"50\" :remaining=\"50\" style=\"margin-top: 20px\"></ProgressBar>\n  </Box>`,\n  data: function() {\n    return {spent: 223};\n  }\n}"}
             })
           },
-        }).$mount('#AA21ylrxfdxd5k0z9h81t');
+        }).$mount('#AAgp2fxjes6fek9ki2su6');
       </script>
     </body>
   </template>
 
-  <iframe frameborder="0" id="FA21ylrxfdxd5k0z9h81t" style="width: 100%;"></iframe>
+  <iframe frameborder="0" id="FAgp2fxjes6fek9ki2su6" style="width: 100%;"></iframe>
 
   <script>
     void function() {
-      const iframe = document.getElementById('FA21ylrxfdxd5k0z9h81t');
+      const iframe = document.getElementById('FAgp2fxjes6fek9ki2su6');
       const doc = iframe.contentWindow || ( iframe.contentDocument.document || iframe.contentDocument);
 
       doc.document.open();
-      doc.document.write($("#TA21ylrxfdxd5k0z9h81t").html());
+      doc.document.write($("#TAgp2fxjes6fek9ki2su6").html());
       doc.document.close();
       iframe.contentWindow.updateHeight = function(height) {
         $(iframe).height(height + 20)
@@ -352,7 +405,8 @@ components together.</p>
     
 
 
-</div>
+
+                    </div>
                 </div>
             </div>
         
@@ -361,11 +415,12 @@ components together.</p>
     
           
             <div class='vertical-section'>
-                <h3 class="title"><span>Slots</span></h3>
+                <h1>Slots</h1>
                 <div class="members">
                 
                     <div class="member">
-                        <h4 class="name">
+                        <h4 class="name" id="slot-options">
+                            <a class="href-link" href="#slot-options">#</a>
                             <span class="code-name">options</span>
                         </h4>
                         <div class="description">
@@ -374,7 +429,8 @@ components together.</p>
                     </div>
                 
                     <div class="member">
-                        <h4 class="name">
+                        <h4 class="name" id="slot-default">
+                            <a class="href-link" href="#slot-default">#</a>
                             <span class="code-name">default</span>
                         </h4>
                         <div class="description">
@@ -402,7 +458,7 @@ components together.</p>
 
     
         <div class='vertical-section'>
-            <h3 class="title"><span>Methods</span></h3>
+            <h1>Methods</h1>
             <div class="members">
             
                 <div class="member">
@@ -410,6 +466,7 @@ components together.</p>
 
     
     <h4 class="name" id=".exampleMethod">
+        <a class="href-link" href="#.exampleMethod">#</a>
         
             
                 <span class='tag'>static</span>
@@ -442,28 +499,28 @@ documented file</p>
 
     <h5>Parameters:</h5>
     
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
 
-<table class="params">
-    <thead>
-    <tr>
+            <th>Type</th>
+
+            
+
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
         
-        <th>Name</th>
-        
 
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        
+            
 <tr class="deep-level-0">
   
       <td class="name"><code>prop1</code></td>
@@ -486,9 +543,9 @@ documented file</p>
 </tr>
 
 
-    
-
         
+
+            
 <tr class="deep-level-0">
   
       <td class="name"><code>prop2</code></td>
@@ -511,9 +568,10 @@ documented file</p>
 </tr>
 
 
-    
-    </tbody>
-</table>
+        
+        </tbody>
+    </table>
+</div>
 
 
 
@@ -590,7 +648,7 @@ documented file</p>
 
     
         <div class='vertical-section'>
-            <h3 class="title"><span>Events</span></h3>
+            <h1>Events</h1>
             <div class="members">
             
                 <div class="member">
@@ -599,6 +657,7 @@ documented file</p>
 
     
     <h4 class="name" id="event:unexpectedEvent">
+        <a class="href-link" href="#event:unexpectedEvent">#</a>
         
         <span class="code-name">
             
@@ -702,22 +761,27 @@ of some kind of unexpected behaviour.</p>
 
 
 
-                </div>
             </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
         </div>
     </div>
-
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Wed Sep 25 2019 14:45:18 GMT+0200 (Central European Summer Time)</p>
-        <p class="sidebar-created-by">
-            <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
-            <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
-        </p>
-    </div>
-</footer>
-
 <script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
 <script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
 </body>
 </html>

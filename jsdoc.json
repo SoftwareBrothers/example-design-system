@@ -17,7 +17,7 @@
       "recurse": true,
       "verbose": true,
       "readme": "./readme.md",
-      "template": "node_modules/better-docs",
+      "template": "better-docs",
       "tutorials": "./tutorials"
   },
   "templates": {
@@ -30,6 +30,7 @@
                 }
             ]
       },
+      "search": true,
       "default": {
         "staticFiles": {
           "include": [
