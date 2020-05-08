@@ -1,3 +1,10 @@
+## [0.1.7](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.6...v0.1.7) (2020-05-08)
+
+
+### Bug Fixes
+
+* trigger ([bf15cd9](https://github.com/SoftwareBrothers/example-design-system/commit/bf15cd9c242d22fa47a121617b8a561158803a4b))
+
 ## [0.1.6](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.5...v0.1.6) (2020-05-08)
 
 
