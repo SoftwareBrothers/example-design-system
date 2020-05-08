@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.8...v0.2.0) (2020-05-08)
+
+
+### Features
+
+* add precommit ([89dd5b2](https://github.com/SoftwareBrothers/example-design-system/commit/89dd5b2bcf9ccdf65229c1b77d22bf3fa724cc31))
+
 ## [0.1.8](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.7...v0.1.8) (2020-05-08)
 
 
