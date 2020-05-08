@@ -1,3 +1,10 @@
+## [0.1.8](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.7...v0.1.8) (2020-05-08)
+
+
+### Bug Fixes
+
+* the CI ([d0c0bc8](https://github.com/SoftwareBrothers/example-design-system/commit/d0c0bc8cac20178342c5b45a8544cd93cea6b716))
+
 ## [0.1.7](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.6...v0.1.7) (2020-05-08)
 
 
