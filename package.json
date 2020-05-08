@@ -1,12 +1,13 @@
 {
   "name": "my-documented-app",
-  "version": "0.1.2",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "docs": "jsdoc -c 'jsdoc.json'"
+    "docs": "jsdoc -c 'jsdoc.json'",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -23,7 +24,8 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "jsdoc": "^3.6.3",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "semantic-release": "^17.0.7"
   },
   "eslintConfig": {
     "root": true,
@@ -47,5 +49,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SoftwareBrothers/example-design-system.git"
+  }
 }
