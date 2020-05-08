@@ -9,7 +9,7 @@
     "semantic-release": "semantic-release"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/SoftwareBrothers"
   },
   "dependencies": {
     "core-js": "^2.6.5",
