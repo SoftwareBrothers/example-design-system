@@ -1,3 +1,10 @@
+## [0.1.4](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.3...v0.1.4) (2020-05-08)
+
+
+### Bug Fixes
+
+* add publish config ([91352d7](https://github.com/SoftwareBrothers/example-design-system/commit/91352d7decd043de8f640e6bf7badb17282260d4))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
