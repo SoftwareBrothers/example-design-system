@@ -1,3 +1,10 @@
+## [0.1.5](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.4...v0.1.5) (2020-05-08)
+
+
+### Bug Fixes
+
+* add new git release ([a7c4193](https://github.com/SoftwareBrothers/example-design-system/commit/a7c4193db66d389018e4b708d7d9e0ab47979b40))
+
 ## [0.1.4](https://github.com/SoftwareBrothers/example-design-system/compare/v0.1.3...v0.1.4) (2020-05-08)
 
 
