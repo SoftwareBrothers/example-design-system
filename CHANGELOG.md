@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/SoftwareBrothers/example-design-system/compare/v0.2.1...v0.3.0) (2020-05-12)
+
+
+### Features
+
+* amazing feature ([f3c6eb6](https://github.com/SoftwareBrothers/example-design-system/commit/f3c6eb6a8b45f846e9967b324b3d7ca359c5ed3d))
+
 ## [0.2.1](https://github.com/SoftwareBrothers/example-design-system/compare/v0.2.0...v0.2.1) (2020-05-12)
 
 
