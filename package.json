@@ -58,10 +58,8 @@
     "> 1%",
     "last 2 versions"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+  "gitHooks": {
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "repository": {
     "type": "git",
