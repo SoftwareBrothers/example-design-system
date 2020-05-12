@@ -1,3 +1,10 @@
+## [0.3.1](https://github.com/SoftwareBrothers/example-design-system/compare/v0.3.0...v0.3.1) (2020-05-12)
+
+
+### Bug Fixes
+
+* sth ([d7f360c](https://github.com/SoftwareBrothers/example-design-system/commit/d7f360ca480ba4fa3a2a36e1f5db088615efa805))
+
 # [0.3.0](https://github.com/SoftwareBrothers/example-design-system/compare/v0.2.1...v0.3.0) (2020-05-12)
 
 
