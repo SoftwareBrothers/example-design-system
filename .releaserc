@@ -4,7 +4,7 @@
     "next",
     {
       "name": "beta",
-      "prerelease": true
+      "prerelease": "beta"
     }
   ],
   "plugins": [
