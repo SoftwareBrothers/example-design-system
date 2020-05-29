@@ -3,8 +3,8 @@
     "master",
     "next",
     {
-      "name": "beta",
-      "prerelease": "beta"
+      "name": "develop",
+      "prerelease": "dev1"
     }
   ],
   "plugins": [
